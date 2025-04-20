@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="bullying">
+    <title>Lawrence Chrome</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #bdc3c7, #2c3e50);
+        }
+        header, footer {
+            background: hsla(164, 71%, 96%, 0.904);
+            color: #000000;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            margin: 1rem 0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #000000;
+            text-decoration: none;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        article, .contact-form {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            background: #fff;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 5px;
+            width: 100%;
+            max-width: 800px;
+        }
+        .about-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+        .about-content img {
+            max-width: 300px;
+            margin-left: 20px;
+            border-radius: 5px;
+        }
+        h2 {
+            margin-bottom: 0.5rem;
+            text-align: left;
+            width: 100%;
+        }
+        p {
+            margin-top: 0;
+        }
+        .project-content, .multimedia-content {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px; /* Jarak antar kotak proyek */
+            width: 100%;
+        }
+        .project-box, .multimedia-box {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        img.project-image {
+            max-width: 100%;
+        }
+        label {
+            display: block;
+            margin: 0.5rem 0 0.2rem;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #706f6e;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: rgb(202, 255, 246);
+        }
+        audio, video {
+            width: 100%;
+            max-width: 100%;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            .project-content, .multimedia-content {
+                grid-template-columns: 1fr; /* Satu kolom pada layar kecil */
+            }
+        }
+
+        /* Tambahan untuk jarak */
+        .description {
+            margin-top: 15px; /* Jarak antara elemen */
+            padding: 10px;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+        }
+        .social-media {
+            margin-top: 10px; /* Jarak untuk media sosial */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1> PORTOFOLIO </h1>
+    <nav>
+        <a href="#tentang">Tentang</a>
+        <a href="#project">Project</a>
+        <a href="#multimedia">Multimedia</a>
+        <a href="#kontak">Kontak</a>
+    </nav>
+</header>
+
+<main>
+    <article id="tentang">
+        <div class="about-content">
+            <div>
+                <h2>Hello,</h2>
+                <h2>Saya Laurensia Viranti Putri</h2>
+                <p>Mahasiswa aktif Universitas Internasional Semen Indonesia dengan program studi sistem informasi. Saya memiliki hobi berolahraga dan mendesain.</p>
+            </div>
+            <img src="Profil.png" alt="Profile Picture">
+        </div>
+    </article>
+
+    <article id="project">
+        <h2>PROJEK</h2>
+        <div class="project-content">
+            <div class="project-box">
+                <p><strong>Projek 1:</strong> Bakery</p>
+                <img src="project1.jpg" alt="Project 1" class="project-image">
+            </div>
+            <div class="project-box">
+                <p><strong>Projek 2:</strong> Tanaman</p>
+                <img src="project2.jpg" alt="Project 2" class="project-image">
+            </div>
+        </div>
+    </article>
+
+    <article id="multimedia"> 
+        <h2>MULTIMEDIA</h2>
+        <div class="multimedia-content">
+            <div class="multimedia-box">
+                <p><strong>Audio:</strong> I Think They Call This Love - Elliot James Reay</p>
+                <audio controls>
+                    <source src="Audio.mp3" type="audio/mp3">
+                </audio>
+                <p><strong>Deskripsi:</strong></p>
+                <p class="description">Lagu "I Think They Call This Love" karya Elliot James Reay menggambarkan perasaan cinta yang mendalam dan kompleks. Dalam liriknya, penyanyi mengekspresikan pengalaman emosional yang kuat ketika seseorang jatuh cinta, menunjukkan bagaimana cinta dapat mengubah perspektif dan perasaan.</p>
+            </div>
+            <div class="multimedia-box">
+                <p><strong>Video:</strong> Disney’s MOANA 2</p>
+                <video controls>
+                    <source src="video.mp4" type="video/mp4">
+                </video>
+                <p><strong>Deskripsi:</strong></p>
+                <p class="description">Disney’s MOANA 2 adalah sekuel dari film animasi populer "Moana." Film ini melanjutkan petualangan Moana, seorang gadis muda yang berani, saat ia menjelajahi lautan dan menghadapi tantangan baru. Dengan tema tentang keberanian, persahabatan, dan penemuan diri, film ini menawarkan pesan yang kuat dan visual yang menakjubkan.</p>
+            </div>
+        </div>
+    </article>
+
+    <section id="kontak" class="contact-form">
+        <h2>Formulir Kontak</h2>
+        <form action="#" method="post" onsubmit="return validateForm()">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" placeholder="masukan nama" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="masukan email" required>
+
+            <label for="message">Pesan:</label>
+            <textarea id="message" name="message" placeholder="Tulis pesan Anda di sini..." required></textarea>
+
+            <button type="submit">Kirim</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>Hubungi Kami</p>
+    <p><a href="https://www.instagram.com/_ren.vp_/" target="_blank" style="text-decoration: none; color: inherit;">Instagram: _ren.vp_</a></p>
+    <p>email : laurensia.putri23@student.uisi.ac.id</p>
+    <p>&copy; 2025 LawrenceChrome.com</p>
+</footer>
+
+<script>
+    function validateForm() {
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+        
+        if (!name || !email || !message) {
+            alert('Semua field harus diisi!');
+            return false;
+        }
+        return true;
+    }
+</script>
+
+</body>
+</html>
